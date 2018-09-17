@@ -13,10 +13,11 @@ public class Accelerate extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Accelerate.fxml"));
-        primaryStage.setTitle("Registration Form FXML Application");
-        primaryStage.setScene(new Scene(root, 277, 411));
+        primaryStage.setTitle("Freelance");
+        primaryStage.setScene(new Scene(root, 335, 600));
         primaryStage.show();
-    }
+        primaryStage.setResizable(false);
+        }
     
 	
 
