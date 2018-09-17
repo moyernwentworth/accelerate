@@ -17,6 +17,7 @@ public class Accelerate extends Application {
         primaryStage.setScene(new Scene(root, 277, 411));
         primaryStage.show();
     }
+    
 	
 
 public static void main(String[] args) {
