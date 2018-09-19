@@ -7,14 +7,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
-
 public class profile extends Application {
-
+	public Parent root;
+	public Scene staged;
+	
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ProductPage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("ProductPage.fxml"));
+        staged=new Scene(root);
         primaryStage.setTitle("Freelance");
-        primaryStage.setScene(new Scene(root, 335, 600));
+        primaryStage.setScene(staged);
         primaryStage.show();
         primaryStage.setResizable(false);
         }
