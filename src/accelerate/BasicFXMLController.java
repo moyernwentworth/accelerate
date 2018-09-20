@@ -38,17 +38,18 @@ public class BasicFXMLController {
         Stage stage;
         Parent root;
        
-        if(event.getSource()=="Accelerate.fxml"){
+        if(event.isControlDown() == true){
             stage = (Stage) accelerate.root.getScene().getWindow();  //grabs the current stage (by looking at the window that the button belongs to
             root = FXMLLoader.load(getClass().getResource("ProductPage.fxml")); //loads the other scene fxml
-        }else {
+        }
+        else {
            stage = (Stage) profileScene.root.getScene().getWindow();
            root = FXMLLoader.load(getClass().getResource("Accelerate.fxml"));
-        
+        }
         Scene scene = new Scene(root); //instantiates new scene
         stage.setScene(scene);         //sets the scene to the stage
         stage.show();                  //displays it
-    }        
+            
 }
 
     @FXML
