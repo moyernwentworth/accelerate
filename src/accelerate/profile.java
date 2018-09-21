@@ -1,5 +1,7 @@
 package accelerate;
 	
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -8,18 +10,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
 public class profile extends Application {
-	public Parent root;
-	public Scene staged;
+	 Parent root;
+	 Scene staged;
 	
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        root = FXMLLoader.load(getClass().getResource("ProductPage.fxml"));
-        staged=new Scene(root);
-        primaryStage.setTitle("Freelance");
-        primaryStage.setScene(staged);
-        primaryStage.show();
-        primaryStage.setResizable(false);
-        }
+    public void start(Stage primaryStage) throws IOException{
+    	   root = FXMLLoader.load(getClass().getResource("pr.fxml"));
+           staged = new Scene(root);
+           primaryStage.setTitle("Freelance");
+           primaryStage.setResizable(false);
+           primaryStage.setScene(staged);
+           primaryStage.show();
+           }
     
 	
 
