@@ -9,13 +9,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
-public class profile extends Application {
+public class Settings extends Application {
 	 Parent root;
 	 Scene staged;
 	
     @Override
     public void start(Stage primaryStage) throws IOException{
-    	   root = FXMLLoader.load(getClass().getResource("profile.fxml"));
+    	   root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
            staged = new Scene(root);
            primaryStage.setTitle("Freelance");
            primaryStage.setResizable(false);
